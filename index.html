@@ -10,19 +10,32 @@
 <body>
     <a class="skip-link" href="#content">Skip to content</a>
     <header class="site-header">
-        <div class="container">
-            <h1 class="logo">eRZe<span>PortFolio</span></h1>
-            <nav aria-label="Primary">
-                <ul class="nav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <div class="container">
+    <h1 class="logo">eRZe<span>PortFolio</span></h1>
+
+    <div class="header-actions">
+      <nav aria-label="Primary" class="nav-container">
+        <ul class="nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+
+      <button class="theme-toggle" aria-label="Toggle Dark/Light Theme">
+        <i class="fas fa-sun"></i>
+      </button>
+
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
 
 
 
@@ -51,7 +64,10 @@
                             My aim is to seek web collaboration opportunities, freelance work, and future career development in web development.
                         </p>
                         </p>
-                        <a class="btn" href="#project">See My work</a>
+                       <div class="hero-buttons">
+                        <a class="btn hero-btn edit-btn">Edit</a>
+                        <a class="btn" href="#project">See My Work</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -60,30 +76,21 @@
 
 
 
-        <section id="about" class="section" aria-labelledby="about-title">
-            <div class="container">
-                <div class="section-title">
-                    <h2 id="about-title">About</h2>
-                </div>
-                <div class="about-content">
-                    <p>
-                        I am a <strong>beginner web developer</strong> I love to build clean, accessible, and user-friendly interface design. 
-                        I enjoy experimenting with CSS layouts, semantic HTML, and responsive design.
-                    </p>
-                    <p>
-                        Currently, I'm focused on strengthening my foundations in 
-                        <strong>HTML5 and CSS3</strong> while gradually exploring JavaScript to make websites more interactive.
-                    </p>
-                    <p>
-                        I learn best by creating projects — from simple landing pages to small portfolio sites. You can check some of my practice work on 
-                        <a href="https://github.com/evenerzeisrare" target="_blank" rel="noopener">GitHub</a>.
-                    </p>
-                    <p>
-                        Beyond coding, I once thought it was simple, but I've realized that without continuous practice, it's easy to fall behind and lose the spark. That's why I stay committed to learning and improving every day. My goal is to grow into a full-stack developer and contribute to meaningful digital projects that make a difference.
-                    </p>
-                </div>
-            </div>
-        </section>
+<section id="about" class="section" aria-labelledby="about-title">
+    <div class="container">
+        <div class="section-title">
+            <h2 id="about-title">About</h2>
+        </div>
+        <div class="about-content">
+            <p>I am a <strong>beginner web developer</strong> I love to build clean, accessible, and user-friendly interface design. I enjoy experimenting with CSS layouts, semantic HTML, and responsive design.</p>
+            <p>Currently, I'm focused on strengthening my foundations in <strong>HTML5 and CSS3</strong> while gradually exploring JavaScript to make websites more interactive.</p>
+            <p>I learn best by creating projects — from simple landing pages to small portfolio sites. You can check some of my practice work on <a href="https://github.com/evenerzeisrare" target="_blank" rel="noopener">GitHub</a>.</p>
+            <p>Beyond coding, I once thought it was simple, but I've realized that without continuous practice, it's easy to fall behind and lose the spark. That's why I stay committed to learning and improving every day. My goal is to grow into a full-stack developer and contribute to meaningful digital projects that make a difference.</p>
+        </div>
+        <a class="btn hero-btn edit-btn">Edit</a>
+    </div>
+</section>
+
 
 
 
@@ -103,6 +110,7 @@
                         <div class="card-body">
                             <h3>UnifyHub</h3>
                             <p>UnifyHub is an interactive platform built for students to stay connected and informed. It allows them to check school organizations, view upcoming events, and etc.. Students can also post and share updates, making it a space for both information and interaction.</p>
+                            <a class="btn btn-outline edit-btn">Edit</a>
                             <a class="btn btn-outline" href="#" target="_blank" rel="noopener"> View</a>
                         </div>
                     </article>
@@ -115,6 +123,7 @@
                             <h3>CaragaCare</h3>
                             <p>CaragaCare is a dental clinic appointment system designed to make scheduling
                             easier for both patients and doctors. It helps prevent wasted time when the dentist is unavailable and reduces unnecessary waiting at the clinic.</p>
+                            <a class="btn btn-outline edit-btn">Edit</a>
                             <a class="btn btn-outline" href="#" target="_blank" rel="noopener">View</a>
                         </div>
                     </article>
@@ -126,6 +135,7 @@
                         <div class="card-body">
                             <h3>SYBlog</h3>
                             <p>SYBlog is a blog project I created to practice web design. The blog is made for viewing stories, ideas, or update in a simple way.</p>
+                            <a class="btn btn-outline edit-btn">Edit</a>
                             <a class="btn btn-outline" href="#" target="_blank" rel="noopener"> View</a>
                         </div>
                     </article>
@@ -267,5 +277,6 @@
             <span id="year">2025</span> © Jherzell Jane Sayahan. All rights reserved.
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
